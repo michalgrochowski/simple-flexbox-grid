@@ -1,0 +1,6 @@
+.footer {
+  @include flex-center-column;
+  width: 100vw;
+  background-color: $slightly-less-gray;
+  color: $light-text-color;
+}

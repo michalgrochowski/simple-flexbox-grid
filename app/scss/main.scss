@@ -1,5 +1,5 @@
-@import 'mixins.scss';
-@import 'variables.scss';
+@import 'mixins';
+@import 'variables';
 
 // Main Styles
 
@@ -20,10 +20,13 @@ body {
   width: 100vw;
   @include flex-column;
   align-items: center;
+  overflow-x: hidden;
 }
 
-@import 'grid.scss';
+@import 'grid';
 
 // Other components
 
 @import 'nav';
+@import 'footer';
+@import 'boxes';

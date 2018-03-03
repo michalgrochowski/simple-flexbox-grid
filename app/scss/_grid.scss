@@ -3,11 +3,10 @@
 .grid {
   @include flex-center-column;
   width: $container-width;
-  border: 1px solid #000000;
   min-height: 1px;
   box-sizing: border-box;
-  @include mq-max($xs) {
-    margin-top: 8rem;
+  @include mq-max(850px) {
+    margin-top: 6rem;
   }
   @include mq-max(1200px) {
     width: 100%;
@@ -24,168 +23,415 @@
 // Columns
 
 [class*='col-'] {
-  border: 1px solid #000000;
   margin: 1rem $gutter 1rem $gutter;
+  @include flex-center-column;
 }
+
+// Basic classes
 
 .col {
   &-xs {
     @include mq-max($xs-1) {
       &-1 {
-        width: calc(8.33% - 2*#{$gutter});
+        width: $col-1;
       }
       &-2 {
-        width: calc(16.66% - 2*#{$gutter});
+        width: $col-2;
       }
       &-3 {
-        width: calc(25% - 2*#{$gutter});
+        width: $col-3;
       }
       &-4 {
-        width: calc(33.33% - 2*#{$gutter});
+        width: $col-4;
       }
       &-5 {
-        width: calc(41.66% - 2*#{$gutter});
+        width: $col-5;
       }
       &-6 {
-        width: calc(50% - 2*#{$gutter});
+        width: $col-6;
       }
       &-7 {
-        width: calc(58.33% - 2*#{$gutter});
+        width: $col-7;
       }
       &-8 {
-        width: calc(66.66% - 2*#{$gutter});
+        width: $col-8;
       }
       &-9 {
-        width: calc(75% - 2*#{$gutter});
+        width: $col-9;
       }
       &-10 {
-        width: calc(83.33% - 2*#{$gutter});
+        width: $col-10;
       }
       &-11 {
-        width: calc(91.66% - 2*#{$gutter});
+        width: $col-11;
       }
       &-12 {
-        width: calc(100% - 2*#{$gutter});
+        width: $col-12;
       }
     }
   }
   &-sm {
     @include mq-minmax($xs,$sm-1) {
       &-1 {
-        width: calc(8.33% - 2*#{$gutter});
+        width: $col-1;
       }
       &-2 {
-        width: calc(16.66% - 2*#{$gutter});
+        width: $col-2;
       }
       &-3 {
-        width: calc(25% - 2*#{$gutter});
+        width: $col-3;
       }
       &-4 {
-        width: calc(33.33% - 2*#{$gutter});
+        width: $col-4;
       }
       &-5 {
-        width: calc(41.66% - 2*#{$gutter});
+        width: $col-5;
       }
       &-6 {
-        width: calc(50% - 2*#{$gutter});
+        width: $col-6;
       }
       &-7 {
-        width: calc(58.33% - 2*#{$gutter});
+        width: $col-7;
       }
       &-8 {
-        width: calc(66.66% - 2*#{$gutter});
+        width: $col-8;
       }
       &-9 {
-        width: calc(75% - 2*#{$gutter});
+        width: $col-9;
       }
       &-10 {
-        width: calc(83.33% - 2*#{$gutter});
+        width: $col-10;
       }
       &-11 {
-        width: calc(91.66% - 2*#{$gutter});
+        width: $col-11;
       }
       &-12 {
-        width: calc(100% - 2*#{$gutter});
+        width: $col-12;
       }
     }
   }
   &-md {
     @include mq-minmax($sm,$md-1) {
       &-1 {
-        width: calc(8.33% - 2*#{$gutter});
+        width: $col-1;
       }
       &-2 {
-        width: calc(16.66% - 2*#{$gutter});
+        width: $col-2;
       }
       &-3 {
-        width: calc(25% - 2*#{$gutter});
+        width: $col-3;
       }
       &-4 {
-        width: calc(33.33% - 2*#{$gutter});
+        width: $col-4;
       }
       &-5 {
-        width: calc(41.66% - 2*#{$gutter});
+        width: $col-5;
       }
       &-6 {
-        width: calc(50% - 2*#{$gutter});
+        width: $col-6;
       }
       &-7 {
-        width: calc(58.33% - 2*#{$gutter});
+        width: $col-7;
       }
       &-8 {
-        width: calc(66.66% - 2*#{$gutter});
+        width: $col-8;
       }
       &-9 {
-        width: calc(75% - 2*#{$gutter});
+        width: $col-9;
       }
       &-10 {
-        width: calc(83.33% - 2*#{$gutter});
+        width: $col-10;
       }
       &-11 {
-        width: calc(91.66% - 2*#{$gutter});
+        width: $col-11;
       }
       &-12 {
-        width: calc(100% - 2*#{$gutter});
+        width: $col-12;
       }
     }
   }
   &-lg {
-    @include mq-min($lg) {
+    @include mq-minmax($md,$lg-1) {
       &-1 {
-        width: calc(8.33% - 2*#{$gutter});
+        width: $col-1;
       }
       &-2 {
-        width: calc(16.66% - 2*#{$gutter});
+        width: $col-2;
       }
       &-3 {
-        width: calc(25% - 2*#{$gutter});
+        width: $col-3;
       }
       &-4 {
-        width: calc(33.33% - 2*#{$gutter});
+        width: $col-4;
       }
       &-5 {
-        width: calc(41.66% - 2*#{$gutter});
+        width: $col-5;
       }
       &-6 {
-        width: calc(50% - 2*#{$gutter});
+        width: $col-6;
       }
       &-7 {
-        width: calc(58.33% - 2*#{$gutter});
+        width: $col-7;
       }
       &-8 {
-        width: calc(66.66% - 2*#{$gutter});
+        width: $col-8;
       }
       &-9 {
-        width: calc(75% - 2*#{$gutter});
+        width: $col-9;
       }
       &-10 {
-        width: calc(83.33% - 2*#{$gutter});
+        width: $col-10;
       }
       &-11 {
-        width: calc(91.66% - 2*#{$gutter});
+        width: $col-11;
       }
       &-12 {
-        width: calc(100% - 2*#{$gutter});
+        width: $col-12;
+      }
+    }
+  }
+  &-xl {
+    @include mq-min($lg) {
+      &-1 {
+        width: $col-1;
+      }
+      &-2 {
+        width: $col-2;
+      }
+      &-3 {
+        width: $col-3;
+      }
+      &-4 {
+        width: $col-4;
+      }
+      &-5 {
+        width: $col-5;
+      }
+      &-6 {
+        width: $col-6;
+      }
+      &-7 {
+        width: $col-7;
+      }
+      &-8 {
+        width: $col-8;
+      }
+      &-9 {
+        width: $col-9;
+      }
+      &-10 {
+        width: $col-10;
+      }
+      &-11 {
+        width: $col-11;
+      }
+      &-12 {
+        width: $col-12;
+      }
+    }
+  }
+}
+
+// Offsets
+
+.col {
+  &-xs-offset {
+    @include mq-max($xs-1) {
+      &-1 {
+        margin-left: $col-offset-1;
+      }
+      &-2 {
+        margin-left: $col-offset-2;
+      }
+      &-3 {
+        margin-left: $col-offset-3;
+      }
+      &-4 {
+        margin-left: $col-offset-4;
+      }
+      &-5 {
+        margin-left: $col-offset-5;
+      }
+      &-6 {
+        margin-left: $col-offset-6;
+      }
+      &-7 {
+        margin-left: $col-offset-7;
+      }
+      &-8 {
+        margin-left: $col-offset-8;
+      }
+      &-9 {
+        margin-left: $col-offset-9;
+      }
+      &-10 {
+        margin-left: $col-offset-10;
+      }
+      &-11 {
+        margin-left: $col-offset-11;
+      }
+      &-12 {
+        margin-left: $col-offset-12;
+      }
+    }
+  }
+  &-sm-offset {
+    @include mq-minmax($xs,$sm-1) {
+      &-1 {
+        margin-left: $col-offset-1;
+      }
+      &-2 {
+        margin-left: $col-offset-2;
+      }
+      &-3 {
+        margin-left: $col-offset-3;
+      }
+      &-4 {
+        margin-left: $col-offset-4;
+      }
+      &-5 {
+        margin-left: $col-offset-5;
+      }
+      &-6 {
+        margin-left: $col-offset-6;
+      }
+      &-7 {
+        margin-left: $col-offset-7;
+      }
+      &-8 {
+        margin-left: $col-offset-8;
+      }
+      &-9 {
+        margin-left: $col-offset-9;
+      }
+      &-10 {
+        margin-left: $col-offset-10;
+      }
+      &-11 {
+        margin-left: $col-offset-11;
+      }
+      &-12 {
+        margin-left: $col-offset-12;
+      }
+    }
+  }
+  &-md-offset {
+    @include mq-minmax($sm,$md-1) {
+      &-1 {
+        margin-left: $col-offset-1;
+      }
+      &-2 {
+        margin-left: $col-offset-2;
+      }
+      &-3 {
+        margin-left: $col-offset-3;
+      }
+      &-4 {
+        margin-left: $col-offset-4;
+      }
+      &-5 {
+        margin-left: $col-offset-5;
+      }
+      &-6 {
+        margin-left: $col-offset-6;
+      }
+      &-7 {
+        margin-left: $col-offset-7;
+      }
+      &-8 {
+        margin-left: $col-offset-8;
+      }
+      &-9 {
+        margin-left: $col-offset-9;
+      }
+      &-10 {
+        margin-left: $col-offset-10;
+      }
+      &-11 {
+        margin-left: $col-offset-11;
+      }
+      &-12 {
+        margin-left: $col-offset-12;
+      }
+    }
+  }
+  &-lg-offset {
+    @include mq-minmax($md,$lg-1) {
+      &-1 {
+        margin-left: $col-offset-1;
+      }
+      &-2 {
+        margin-left: $col-offset-2;
+      }
+      &-3 {
+        margin-left: $col-offset-3;
+      }
+      &-4 {
+        margin-left: $col-offset-4;
+      }
+      &-5 {
+        margin-left: $col-offset-5;
+      }
+      &-6 {
+        margin-left: $col-offset-6;
+      }
+      &-7 {
+        margin-left: $col-offset-7;
+      }
+      &-8 {
+        margin-left: $col-offset-8;
+      }
+      &-9 {
+        margin-left: $col-offset-9;
+      }
+      &-10 {
+        margin-left: $col-offset-10;
+      }
+      &-11 {
+        margin-left: $col-offset-11;
+      }
+      &-12 {
+        margin-left: $col-offset-12;
+      }
+    }
+  }
+  &-xl-offset {
+    @include mq-min($lg) {
+      &-1 {
+        margin-left: $col-offset-1;
+      }
+      &-2 {
+        margin-left: $col-offset-2;
+      }
+      &-3 {
+        margin-left: $col-offset-3;
+      }
+      &-4 {
+        margin-left: $col-offset-4;
+      }
+      &-5 {
+        margin-left: $col-offset-5;
+      }
+      &-6 {
+        margin-left: $col-offset-6;
+      }
+      &-7 {
+        margin-left: $col-offset-7;
+      }
+      &-8 {
+        margin-left: $col-offset-8;
+      }
+      &-9 {
+        margin-left: $col-offset-9;
+      }
+      &-10 {
+        margin-left: $col-offset-10;
+      }
+      &-11 {
+        margin-left: $col-offset-11;
+      }
+      &-12 {
+        margin-left: $col-offset-12;
       }
     }
   }

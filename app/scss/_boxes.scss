@@ -1,0 +1,24 @@
+.hero-box {
+  background-color: $barely-gray;
+  &__title {
+    background-color: $almost-white;
+  }
+}
+
+.gray-box {
+  background-color: $almost-white;
+  color: $dark-text-color;
+}
+
+.small-gray-box {
+  background-color: $little-gray;
+}
+
+.almost-white-box {
+  background-color: $ok-its-white;
+}
+
+.newsletter-box {
+  background-color: $a-lot-of-gray;
+  color: $light-text-color;
+}
