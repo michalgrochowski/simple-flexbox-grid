@@ -1,0 +1,120 @@
+// Nav
+
+.nav {
+    @include flex-center-row;
+    width: 100vw;
+    max-width: 100vw;
+    height: 6rem;
+    justify-content: space-between;
+    @include mq-max(850px) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+    background-color: #000000;
+}
+
+.nav__logo {
+    height: 4rem;
+    width: auto;
+}
+
+.nav__list {
+    @include flex-center-row;
+    padding: 0;
+    list-style: none;
+    @include mq-max(850px) {
+        @include flex-center-column;
+        position: fixed;
+        left: 0;
+        top: -100vh;
+        width: 100vw;
+        padding: 0;
+        z-index: 1;
+        list-style: none;
+        background-color: inherit;
+        height: 100vh;
+        transition: 0.3s all;
+        &--expanded {
+            top: -4rem;
+            transition: 0.3s all;
+        }
+    }
+}
+
+.nav__item {
+    font-size: 2rem;
+    display: block;
+    padding: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    margin: 0 3rem;
+    @include flex-center-row;
+    @include mq-max(767px) {
+        width: 100vw;
+        font-size: 2.2rem;
+        text-align: center;
+        z-index: 4;
+        padding: 1rem 0 1rem 0;
+        margin: 0 1rem;
+    }
+    @include mq-minmax(768px,950px) {
+        margin: 0 1rem;
+    }
+    @include mq-minmax(951px,1200px) {
+        margin: 0 2rem;
+    }
+    &--controls {
+        @include mq-max(850px) {
+            @include flex-center-column;
+        }
+        @include mq-min(851px) {
+            position: fixed;
+            right: 4rem;
+            top: 2.5rem;
+        }
+    }
+}
+
+.nav__link {
+    text-decoration: none;
+    z-index: 5;
+}
+
+.nav__link.light-theme--link {
+    &::before {
+        background-color: #555555;
+    }
+    &::after {
+        background-color: #555555;
+    }
+}
+
+.nav__link.dark-theme--link {
+    &::before {
+        background-color: #cccccc;
+    }
+    &::after {
+        background-color: #cccccc;
+    }
+}
+
+.nav__hamburger, .nav__close-menu {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 10;
+    font-size: 3rem;
+    border: none;
+    background: none;
+    margin-left: auto;
+    cursor: pointer;
+    @include mq-min(851px) {
+        display: none;
+    }
+}
+
+.nav__close-menu {
+    display: none;
+}

@@ -1,0 +1,29 @@
+@import 'mixins.scss';
+@import 'variables.scss';
+
+// Main Styles
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.6;
+}
+
+body {
+  font-size: 1.6rem;
+  color: #333;
+  min-height: 100vh;
+  width: 100vw;
+  @include flex-column;
+  align-items: center;
+}
+
+@import 'grid.scss';
+
+// Other components
+
+@import 'nav';

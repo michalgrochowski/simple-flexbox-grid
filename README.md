@@ -1,1 +1,3 @@
-# simple-flexbox-grid
+### Simple Flexbox Grid
+
+License: MIT
