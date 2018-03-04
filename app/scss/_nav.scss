@@ -7,7 +7,7 @@
     height: 6rem;
     justify-content: space-between;
     background-color: $a-lot-of-gray;
-    @include mq-max(850px) {
+    @include mq-max(992px) {
         position: fixed;
         top: 0;
         left: 0;
@@ -24,7 +24,7 @@
     @include flex-center-row;
     padding: 0;
     list-style: none;
-    @include mq-max(850px) {
+    @include mq-max(992px) {
         @include flex-center-column;
         position: fixed;
         left: 0;
@@ -51,29 +51,13 @@
     letter-spacing: 0.2rem;
     margin: 0 3rem;
     @include flex-center-row;
-    @include mq-max(767px) {
+    @include mq-max(992px) {
         width: 100vw;
         font-size: 2.2rem;
         text-align: center;
         z-index: 4;
         padding: 1rem 0 1rem 0;
         margin: 0 1rem;
-    }
-    @include mq-minmax(768px,950px) {
-        margin: 0 1rem;
-    }
-    @include mq-minmax(951px,1200px) {
-        margin: 0 2rem;
-    }
-    &--controls {
-        @include mq-max(850px) {
-            @include flex-center-column;
-        }
-        @include mq-min(851px) {
-            position: fixed;
-            right: 4rem;
-            top: 2.5rem;
-        }
     }
 }
 
@@ -94,7 +78,7 @@
     margin-left: auto;
     cursor: pointer;
     color: $light-text-color;
-    @include mq-min(851px) {
+    @include mq-min(992px) {
         display: none;
     }
 }

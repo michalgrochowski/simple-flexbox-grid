@@ -4,8 +4,7 @@
   @include flex-center-column;
   width: $container-width;
   min-height: 1px;
-  box-sizing: border-box;
-  @include mq-max(850px) {
+  @include mq-max(992px) {
     margin-top: 6rem;
   }
   @include mq-max(1200px) {
